@@ -1,4 +1,68 @@
-// DOM Content Loaded
+// simple HMAC-like signer (for illustration only; real signing should be server-side)
+function simpleSign(value, secret) {
+  return btoa(value + '|' + secret);
+}
+function simpleVerify(signed, secret) {
+  try {
+    const decoded = atob(signed);
+    const [value, sigSecret] = decoded.split('|');
+    return sigSecret === secret ? value : null;
+  } catch {
+    return null;
+  }
+}
+
+const EXPIRY_HOURS = 48; // 48 hours limit
+const STORAGE_KEY = 'app_first_run_signed';
+const SECRET = 'some-constant-secret';
+
+function getFirstRunTimestamp() {
+  const signed = localStorage.getItem(STORAGE_KEY);
+  if (!signed) return null;
+  const ts = simpleVerify(signed, SECRET);
+  if (!ts) return null;
+  return parseInt(ts, 10);
+}
+
+function setFirstRunTimestamp(now) {
+  const signed = simpleSign(String(now), SECRET);
+  localStorage.setItem(STORAGE_KEY, signed);
+}
+
+function isExpired() {
+  let firstRun = getFirstRunTimestamp();
+  const now = Date.now();
+  if (!firstRun) {
+    setFirstRunTimestamp(now);
+    firstRun = now;
+  }
+  const elapsedMs = now - firstRun;
+  return elapsedMs > EXPIRY_HOURS * 3600 * 1000;
+}
+
+function enforceExpiry() {
+  if (isExpired()) {
+    document.body.innerHTML = '';
+    const msg = document.createElement('div');
+    msg.style.padding = '2rem';
+    msg.style.fontFamily = 'system-ui, sans-serif';
+    msg.style.textAlign = 'center';
+    msg.innerHTML = `
+      <h2>Access Expired</h2>
+      <p>This version expired after ${EXPIRY_HOURS} hours.</p>
+    `;
+    document.body.appendChild(msg);
+    throw new Error('Application expired after 48 hours');
+  }
+}
+
+// Run on startup
+enforceExpiry();
+
+// Keep checking every 5 minutes
+setInterval(enforceExpiry, 5 * 60 * 1000);
+
+  
 document.addEventListener("DOMContentLoaded", () => {
   // Initialize all functionality
   initTheme()
