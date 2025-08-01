@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Animage Digiskill</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                 <a href="index.html" class="nav-logo">
+                <img src="./public/logo.png" alt="Animage Digiskill Logo" class="logo-img" />
+                <span class="logo-text">Animage Digiskill</span>
+                </a>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="courses.html" class="nav-link">Courses</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="https://api.whatsapp.com/send?phone=9156603344" class="btn btn-primary btn-sm"><i class="fa-brands fa-whatsapp"></i>Whats App</a>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-hero-title animate-fade-in-up">Contact Us</h1>
+                <p class="page-hero-subtitle animate-fade-in-up delay-300">Ready to start your digital transformation journey? Get in touch with us today.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We're here to help you take the next step in your career. Reach out to us through any of the following channels.</p>
+            </div>
+            
+            <div class="contact-info-grid">
+                <div class="contact-info-card animate-on-scroll hover-lift">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="contact-info-title">Visit Us</h3>
+                    <div class="contact-info-details">
+                        <p>Basement,R Square building ,thatte 
+                            nagar road Near BYK College,Nashik-05, maharatra </p>
+                        <p>India,422005</p>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card animate-on-scroll hover-lift">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="contact-info-title">Call Us</h3>
+                    <div class="contact-info-details">
+                        <p>+91 8888866258</p>
+                        <p>+91 9156603344</p>
+                        <p>+91 9860009779</p>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card animate-on-scroll hover-lift">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="contact-info-title">Email Us</h3>
+                    <div class="contact-info-details">
+                        <p>info@animagedigiskill.com</p>
+                        <p>drtnasik4@gmail.com</p>
+                        
+                    </div>
+                </div>
+                
+                <div class="contact-info-card animate-on-scroll hover-lift">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="contact-info-title">Office Hours</h3>
+                    <div class="contact-info-details">
+                        <p>Monday - saturday: 10:00 AM - 7:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form and Map -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container animate-on-scroll">
+                    <div class="contact-form-card">
+                        <div class="contact-form-header">
+                            <h2>Send us a Message</h2>
+                            <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                        </div>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="course">Course of Interest</label>
+                                <select id="course" name="course" required>
+                                    <option value="">Select a course</option>
+                                    <option value="digital-marketing">Web Designing</option>
+                                    <option value="web-development"> UI/UX Design Fundamentals</option>
+                                    <option value="data-science">Graphic Design Mastery</option>
+                                    <option value="ui-ux-design">Software Development</option>
+                                    <option value="cloud-computing"> VFX & Motion Graphics</option>
+                                    <option value="mobile-development">MS-CIT Certification</option>
+                                    <option value="cybersecurity">Advanced JavaScript & Frameworks</option>
+                                    <option value="ai-ml">3D Animation & Modeling</option>
+                                    <option value="blockchain">Full Stack Web Development</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us more about your requirements..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Map and Additional Info -->
+                <div class="contact-additional-info animate-on-scroll">
+                    <!-- Embedded Map -->
+                     <div class="map-container">
+                        <div class="map-placeholder">
+                            <iframe
+                            width="600"
+                            height="450"
+                            style="border:0;"
+                            loading="lazy"
+                            allowfullscreen
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps/embed/v1/place?q=Animage+Digiskill+Pvt.+Ltd,+05,+near+BYK+College,+Thatte+Nagar,+Nashik,+Maharashtra,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                            </iframe>
+                            </div>
+                                 </div> 
+                    
+                   <!-- Social Media Links -->
+                    <div class="social-media-card">
+                        <h3>Follow Us</h3>
+                        <p>Stay connected with us on social media for updates and insights.</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/people/Animage-Digiskill/61559513733317/?mibextid=ZbWKwL" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/ashvinidigi" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/accounts/login/?next=%2Fanimagedigiskill%2F&source=omni_redirect" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/animage-digiskills" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Contact -->
+                    <div class="quick-contact-card">
+                        <h3>Need Immediate Help?</h3>
+                        <p>For urgent inquiries, call us directly or visit our campus during office hours.</p>
+                        <div class="quick-contact-info">
+                            <div class="quick-contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <strong>Emergency:</strong>
+                                    <span>+91 8888866258 /+91 9156603344</span>
+                                </div>
+                            </div>
+                            <div class="quick-contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Quick Response:</strong>
+                                    <span>info@animagedigiskill.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+       
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">Animage Digiskill</span>
+                    </div>
+                    <p class="footer-description">Empowering digital futures through innovation and excellence. Join thousands of successful professionals who have transformed their careers with us.</p>
+                    <div class="social-links">
+            <a href="https://www.facebook.com/people/Animage-Digiskill/61559513733317/?mibextid=ZbWKwL" class="social-link" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://x.com/ashvinidigi" class="social-link" aria-label="Twitter/X">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/animagedigiskill" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/animage-digiskills" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+                        <li><a href="courses.html"><i class="fas fa-chevron-right"></i> All Courses</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Career Guidance</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Placement Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Popular Courses</h3>
+                    <ul class="footer-links">
+                      <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Web Designing</a></li>
+          <li><a href="courses.html"><i class="fas fa-chevron-right"></i> UI/UX Design Fundamentals</a></li>
+          <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Graphic Design Mastery</a></li>
+          <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Software Development</a></li>
+          <li><a href="courses.html"><i class="fas fa-chevron-right"></i> VFX & Motion Graphics</a></li>
+          <li><a href="courses.html"><i class="fas fa-chevron-right"></i> MS-CIT Certification</a></li>
+          <li><a href="courses.html"><i class="fas fa-chevron-right"></i> 3D Animation & Modeling</a></li>
+          <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Full Stack Web Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p>Basement, R Square Building,<br>Thatte Nagar Road, Near BYK College, Nashik-05, Maharashtra</p>
+                                <p>India, 422005</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                            <p><a href="tel:+918888866258">+91 88888 66258</a></p>
+                            <p><a href="tel:+919156603344">+91 91566 03344</a></p>
+                            <p><a href="tel:+919860009779">+91 98600 09779</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p>info@animagedigiskill.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Animage Digiskill. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

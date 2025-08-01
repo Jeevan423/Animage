@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Animage Digiskill</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                 <a href="index.html" class="nav-logo">
+                <img src="./public/logo.png" alt="Animage Digiskill Logo" class="logo-img" />
+                <span class="logo-text">Animage Digiskill</span>
+                </a>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="courses.html" class="nav-link active">Courses</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="https://api.whatsapp.com/send?phone=9156603344" class="btn btn-primary btn-sm"><i class="fa-brands fa-whatsapp"></i>Whats App</a>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-hero-title animate-fade-in-up">Our Courses</h1>
+                <p class="page-hero-subtitle animate-fade-in-up delay-300">Comprehensive digital educationl courses designed to accelerate your career growth and professional development.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="course-categories">
+        <div class="container">
+            <div class="categories-filter animate-on-scroll">
+                <button class="category-btn active" data-category="all">All Courses</button>
+                <button class="category-btn" data-category="web-designing">Web Designing</button>
+                <button class="category-btn" data-category="web-development">Web Development</button>
+                <button class="category-btn" data-category="3d-animation">3D Animation</button>
+                <button class="category-btn" data-category="vfx">VFX</button>
+                <button class="category-btn" data-category="graphic-designing">Graphic Designing</button>
+                <button class="category-btn" data-category="software-development">Software Development</button>
+                <button class="category-btn" data-category="ui-ux">UI-UX</button>
+                <button class="category-btn" data-category="ms-cit">MS-CIT</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="courses-section">
+        <div class="container">
+            <div class="courses-grid" id="courses-grid">
+                <!-- Web Designing Course -->
+                <div class="course-card animate-on-scroll hover-lift" data-category="web-designing">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="Web Designing">
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.5</span>
+                        </div>
+                        <div class="course-level">Beginner to Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Web Designing</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 3 months</span>
+                        </div>
+                        <p class="course-description">Master the art of creating beautiful and functional websites with modern design principles.</p>
+                        <a href="contact.html" class="btn btn-primary btn-full">
+                            
+                            Inquire Now <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Web Development Course -->
+                <div class="course-card animate-on-scroll hover-lift" data-category="web-development">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop" alt="Full Stack Web Development">
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                        <div class="course-level">Beginner to Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Full Stack Web Development</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 4 months</span>
+                        </div>
+                        <p class="course-description">Learn to build complete web applications from frontend to backend using modern technologies.</p>
+                        <a href="contact.html" class="btn btn-primary btn-full">
+                            Inquire Now <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3D Animation Course -->
+                <div class="course-card animate-on-scroll hover-lift" data-category="3d-animation">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="3D Animation">
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                        <div class="course-level">Intermediate to Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">3D Animation & Modeling</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 4 months</span>
+                        </div>
+                        <p class="course-description">Create stunning 3D animations and models for games, films, and interactive media.</p>
+                        <a href="contact.html" class="btn btn-primary btn-full">
+                            Inquire Now <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design Course -->
+                <div class="course-card animate-on-scroll hover-lift" data-category="ui-ux">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop" alt="UI/UX Design Fundamentals">
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.6</span>
+                        </div>
+                        <div class="course-level">Beginner to Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">UI/UX Design Fundamentals</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 3 months</span>
+                        </div>
+                        <p class="course-description">Design user-centered digital experiences that delight users and drive business results.</p>
+                        <a href="contact.html" class="btn btn-primary btn-full">
+                            Inquire Now <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Graphic Designing Course -->
+                <div class="course-card animate-on-scroll hover-lift" data-category="graphic-designing">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop" alt="Graphic Designing">
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                        <div class="course-level">Intermediate to Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Graphic Design Mastery</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 3 months</span>
+                        </div>
+                        <p class="course-description">Master visual communication through creative design principles and industry-standard tools.</p>
+                        <a href="contact.html" class="btn btn-primary btn-full">
+                            Inquire Now <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Software Development Course -->
+                <div class="course-card animate-on-scroll hover-lift" data-category="software-development">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop" alt="Software Development">
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Software Development</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 4 months</span>
+                        </div>
+                        <p class="course-description">Build robust software applications using modern programming languages and frameworks.</p>
+                        <a href="contact.html" class="btn btn-primary btn-full">
+                            Inquire Now <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- VFX Course -->
+                <div class="course-card animate-on-scroll hover-lift" data-category="vfx">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=250&fit=crop" alt="VFX & Motion Graphics">
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                        <div class="course-level">Beginner to Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">VFX & Motion Graphics</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 4 months</span>
+                        </div>
+                        <p class="course-description">Create stunning visual effects and motion graphics for films, commercials, and digital media.</p>
+                        <a href="contact.html" class="btn btn-primary btn-full">
+                            Inquire Now <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MS-CIT Course -->
+                <div class="course-card animate-on-scroll hover-lift" data-category="ms-cit">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=400&h=250&fit=crop" alt="MS-CIT Certification">
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">MS-CIT Certification</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 6 months</span>
+                        </div>
+                        <p class="course-description">Get certified in Microsoft Computer Information Technology with comprehensive training.</p>
+                        <a href="contact.html" class="btn btn-primary btn-full">
+                            Inquire Now <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Additional Courses -->
+                <div class="course-card animate-on-scroll hover-lift" data-category="web-development">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=250&fit=crop" alt="Advanced JavaScript">
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.6</span>
+                        </div>
+                        <div class="course-level">Intermediate to Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Advanced JavaScript & Frameworks</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 3 months</span>
+                        </div>
+                        <p class="course-description">Master modern JavaScript and popular frameworks like React, Vue, and Angular.</p>
+                        <a href="contact.html" class="btn btn-primary btn-full">
+                            Inquire Now <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll hover-lift" data-category="graphic-designing">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&h=250&fit=crop" alt="Digital Illustration">
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.5</span>
+                        </div>
+                        <div class="course-level">Beginner to Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Digital Illustration & Art</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 2 months</span>
+                        </div>
+                        <p class="course-description">Create stunning digital artwork and illustrations using professional design tools.</p>
+                        <a href="contact.html" class="btn btn-primary btn-full">
+                            Inquire Now <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2 class="cta-title">Can't Find What You're Looking For?</h2>
+                <p class="cta-subtitle">We offer customized training programs tailored to your specific needs and career goals.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Request Custom Training</a>
+                    <a href="services.html" class="btn btn-outline btn-lg">View All Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">Animage Digiskill</span>
+                    </div>
+                    <p class="footer-description">Empowering digital futures through innovation and excellence. Join thousands of successful professionals who have transformed their careers with us.</p>
+                    <div class="social-links">
+            <a href="https://www.facebook.com/people/Animage-Digiskill/61559513733317/?mibextid=ZbWKwL" class="social-link" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://x.com/ashvinidigi" class="social-link" aria-label="Twitter/X">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/animagedigiskill" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/animage-digiskills" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+                        <li><a href="courses.html"><i class="fas fa-chevron-right"></i> All Courses</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Career Guidance</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Placement Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Popular Courses</h3>
+                    <ul class="footer-links">
+                      <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Web Designing</a></li>
+          <li><a href="courses.html"><i class="fas fa-chevron-right"></i> UI/UX Design Fundamentals</a></li>
+          <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Graphic Design Mastery</a></li>
+          <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Software Development</a></li>
+          <li><a href="courses.html"><i class="fas fa-chevron-right"></i> VFX & Motion Graphics</a></li>
+          <li><a href="courses.html"><i class="fas fa-chevron-right"></i> MS-CIT Certification</a></li>
+          <li><a href="courses.html"><i class="fas fa-chevron-right"></i> 3D Animation & Modeling</a></li>
+          <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Full Stack Web Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p>Basement, R Square Building,<br>Thatte Nagar Road, Near BYK College, Nashik-05, Maharashtra</p>
+                                <p>India, 422005</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                            <p><a href="tel:+918888866258">+91 88888 66258</a></p>
+                            <p><a href="tel:+919156603344">+91 91566 03344</a></p>
+                            <p><a href="tel:+919860009779">+91 98600 09779</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p>info@animagedigiskill.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Animage Digiskill. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
